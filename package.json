@@ -1,0 +1,21 @@
+{
+  "name": "smart-thoughts-bot",
+  "version": "1.0.0",
+  "description": "Telegram bot Умные Мысли",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "бот",
+    "телеграм",
+    "bot",
+    "telegram"
+  ],
+  "author": "Михаил Захаров",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.15",
+    "node-fetch": "^2.6.0"
+  }
+}
