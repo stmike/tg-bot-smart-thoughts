@@ -41,8 +41,9 @@ function getTrigger(str) {
 // Яндекс-функция:
 module.exports.bot = async (event) => {
   const body = JSON.parse(event.body);
+  const text = body.message.text;
 
-  const userMsg = body.message.text.toLowerCase();
+  const userMsg = text.toLowerCase();
   let botMsg;
   let photoUrl;
   let redirectUrl;
