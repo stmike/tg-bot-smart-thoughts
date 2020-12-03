@@ -17,7 +17,7 @@ async function getData(url) {
     const data = await fetch(url);
     const json = await data.json();
     const quote = json.quoteText;
-    const author = json.quoteAuthor.length === 0 ? 'Автор не известен' : json.quoteAuthor;
+    const author = json.quoteAuthor.length === 0 ? 'Автор неизвестен' : json.quoteAuthor;
     return `<b>${quote}</b>\n\u2014 <i>${author}</i>`;
   } catch (err) {
     console.error('Fail to fetch data: ' + err);
